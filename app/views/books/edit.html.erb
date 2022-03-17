@@ -1,0 +1,14 @@
+<h1>Editing Book</h1>
+
+<!--updateのボタンが反映されていない-->
+<%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
+<form>
+<%= render 'form', book: @book %>
+</form>
+
+
+
+<%= link_to 'Show', @book, class: "show_#{@book.id}" %> |
+<%= link_to 'Back', books_path, class: "back" %>
+
+<% end %>
