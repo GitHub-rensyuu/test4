@@ -7,8 +7,9 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <!--4.不要な行-->
-    <!--%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>-->
+
+     <!--webpackerがありませんのエラー発生。rails webpacker:installのコマンドをする必要あり-->
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
